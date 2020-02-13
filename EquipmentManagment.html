@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	#equipment{
+	border-collapse: collapse;
+	width = 75%;
+	}
+    #borderimg { 
+  border: 2px solid navy;
+  padding: 3px;
+}
+#equipment td,#equipment th{
+border: 1px solid navy;
+padding: 8px;
+}
+#equipment td{
+background-color: white;
+}
+#equipment th{
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: lightblue;
+color:grey;
+}
+#borderthin{
+border: 1px solid navy;
+padding: 5px;
+}
+    .topnav {
+  overflow: hidden;
+  background-color: white;
+  ;
+}
+table.absolute {
+  position: absolute;
+  top: 300px;
+  right: 485px;}
+  
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 3px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: navy;
+}
+    .center {
+  text-align: center;
+}
+    body{background-image: url("https://www.goldleaf.com.au/image/cache/catalog/catalog/sennelier/pastels/soft-pastels/sennelier-soft-pastel-blue-grey-425-500x500.jpg");
+  font-family: Arial;
+  padding: 10px;
+}
+     
+	</style>
+	</head>
+  <body>
+  <div class="center">
+  <img src="https://www.arcgis.com/sharing/rest/content/items/3cf875abcdc54f9c9771b98aad480a9c/resources/Brookings_Logo_with_LineClearBG__1555098597503__w279.png"/>
+  </div>
+  <div class="topnav" id="borderimg">
+  <a href="#" id="borderthin">Employee Schedule</a>
+  <a></a>
+  <a href="#" id="borderthin">Equipment Inventory</a>
+  <a></a>
+  <a href="#" id="borderthin">Food Inventory</a>
+  <a></a>
+  <a href="#" id="borderthin">Scheduling System</a>
+  <a></a>
+  <a href="#" id="borderthin" style="float:right">Log Out</a>
+  </div>
+  <div>
+  <h1 class="center">Equipment Inventory</h1>
+  <table id="equipment" class="absolute">
+  <tr>
+  <th>Name</th>
+  <th>Location</th>
+  <th>Row</th>
+  <th>Bin</th>
+  <th>Amount</th>
+  </tr>
+  <tr>
+  <td>Microphone</td>
+  <td>Storage Room 1</td>
+  <td>3A</td>
+  <td>4</td>
+  <td>5</td>
+  </tr>
+  <td>Speaker</td>
+  <td>Ballroom</td>
+  <td>N/A</td>
+  <td>0</td>
+  <td>3</td>
+  </tr>
+  <td>Chairs</td>
+  <td>Storage Room 2</td>
+  <td>8B</td>
+  <td>0</td>
+  <td>20</td>
+  </tr>
+  </table>
+  </div>
+  </body>
+</html>
