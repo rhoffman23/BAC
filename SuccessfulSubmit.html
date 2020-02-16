@@ -2,28 +2,10 @@
 <html>
 	<head>
 	<style>
-	#equipment{
-	border-collapse: collapse;
-	width = 100%;
-	}
     #borderimg { 
   box-shadow: 0 0 5px 0 #000;
   border-radius: 5px;
   padding: 5px;
-}
-#equipment td,#equipment th{
-border: 1px solid teal;
-padding: 8px;
-}
-#equipment td{
-background-color: white;
-}	
-#equipment th{
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: left;
-background-color: lightblue;
-color:grey;
 }
 #borderthin{
 padding: 5px;
@@ -79,7 +61,7 @@ background-color:#009390
     .center {
   text-align: center;
 }
-     body{
+    body{
     background-color: white;
   font-family: Arial;
   padding: 10px;
@@ -89,7 +71,33 @@ background-color:#009390
   margin-bottom: 0px;
 }
 html{background-color: #009390}
-     
+
+.form-container{
+    width:250px;
+    height: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+	margin: auto;
+    }
+ 
+ form.list input{
+    	width: 250px;
+        padding: 8px 0px;
+        text-align: center;
+        border: none;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    
+ form.list input[type = "submit"]{
+    background-color: #009390;
+    color: #fff;
+    width: 250px;
+    
+    }
+
 	</style>
 	</head>
   <body>
@@ -107,45 +115,20 @@ html{background-color: #009390}
   <a></a>
   <a href="#" id="borderthin" style="float:right">Log Out</a>
   </div>
-  <h1 class="center">Equipment Inventory</h1>
-  <table id="equipment" align="center">
-  <tr>
-  <th>Name</th>
-  <th>Location</th>
-  <th>Shelf</th>
-  <th>Bin</th>
-  <th>Amount</th>
-  </tr>
-  <tr>
-  <td>Microphone</td>
-  <td>Storage Room 1</td>
-  <td>3A</td>
-  <td>4</td>
-  <td>5</td>
-  </tr>
-  <tr>
-  <td>Speaker</td>
-  <td>Ballroom</td>
-  <td>N/A</td>
-  <td>0</td>
-  <td>3</td>
-  </tr>
-  <tr>
-  <td>Chairs</td>
-  <td>Storage Room 2</td>
-  <td>8B</td>
-  <td>0</td>
-  <td>20</td>
-  </tr>
-  </table>
   <p>
-  <br></p>
-  <div class="center">
-  <button class="button" align="center">Add Entry</button>
-  <button class="button" align="center">Remove Entry(s)</button>
-  <button class="button" align="center">Sort</button>
-   <button class="button" align="center">Edit Entry</button>
-  </div>
+  <br>
+  </p>
+  <div class="form-container"> 
+  	  <div id="login_form">
+  		<div style = "text-align:center"> 
+    			<form class = "list" action ="\index.html">
+					<h2>Submit Successful</h2>
+       			 <p>Item succesfully added.</p>
+				 <input type="submit" name="Back" value="Back"  />
+                 </form>
+    	</div>
+  	  </div>
+	</div> 
   <div class="footer">
   </div>
   </body>
