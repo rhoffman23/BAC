@@ -76,11 +76,14 @@ html{background-color: #009390}
     width: 250px;
     
     }
-login_form input[type="submit"]{
-    background-color: #009390;
-    color: #fff;
+    
+    form.list input[type = "text"]{
+    background-color: #fff;
+    color: red;
     width: 250px;
-}
+    
+    }
+
 	</style>
 	</head>
   <body>
@@ -92,27 +95,26 @@ login_form input[type="submit"]{
   <a></a>
   <a href="#" id="borderthin">Schedule</a>
   <a></a>
-    <a href="\userLogin.html" id="borderthin">User Login</a>
+  <a href="#" id="borderthin">User Login</a>
   <a></a>
 
-  <a></a>
-  <a href="#" id="borderthin" style="float:right">Employee Login</a>
   </div>
   <p> <br> </p>
 	<div class="form-container"> 
   	  <div id="login_form">
   		<div style = "text-align:center">
-    		<h2>Verify Email</h2> 
-    			<form class = "list" action ="/emailReset.html">
-       			 <input type="email" required name="email" placeholder="Email"  />
-        		 <input type="submit" name="submit" value="Enter"  />
-				 </form>
+    		<h2>Employee Login</h2>
+    			<form class = "list" action ="correct-credentials"> 
+       			 <input type="text" name="wrongPassword" value="Incorrect email/password">
+                 <input type="email" required name="email" placeholder="Email"  />
+       			 <input type="password" required name="password" placeholder="Password"  />
+        		 <input type="submit" name="submit" value="Log In"  />
+                 </form>
 
-                 <p>In order to reset your password, a verification email will be sent to the account that is linked to your member login. </p>
-
+             
     	</div>
   	  </div>
 	</div> 
-		<p> <br> <br> <br> <br> </p>
+		<p> <br> <br> <br> <br> <br> </p>
   </body>
 </html>
