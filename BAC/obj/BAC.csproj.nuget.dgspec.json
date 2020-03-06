@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\Back-End\\BAC\\BAC\\BAC.csproj": {}
+    "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\BAC\\BAC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\Back-End\\BAC\\BAC\\BAC.csproj": {
+    "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\BAC\\BAC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\Back-End\\BAC\\BAC\\BAC.csproj",
+        "projectUniqueName": "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\BAC\\BAC.csproj",
         "projectName": "BAC",
-        "projectPath": "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\Back-End\\BAC\\BAC\\BAC.csproj",
+        "projectPath": "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\BAC\\BAC.csproj",
         "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\Back-End\\BAC\\BAC\\obj\\",
+        "outputPath": "C:\\Users\\Brian\\Documents\\GitHub\\BAC\\BAC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
