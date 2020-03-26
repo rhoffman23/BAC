@@ -1,0 +1,28 @@
+ .center {
+    text-align: center;
+  }
+  .container a{
+    overflow: hidden;
+    background-color: #fff;
+  }
+  #borderimg { 
+
+    box-shadow: 0 0 5px 0 #000;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .container a {
+    float: left;
+    display: block;
+    color: #009390;
+    text-align: center;
+    padding: 14px 3px;
+    text-decoration: none;
+  }
+  .container a:hover {
+    background-color: #ddd;
+    color: navy;
+  }
+      .center {
+    text-align: center;
+  }
