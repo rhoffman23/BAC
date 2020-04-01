@@ -9,11 +9,13 @@
     			<form class = "list" action ="\index.html"> 
        			 <input type="email" required name="email" placeholder="Email"  />
        			 <input type="password" required name="password" placeholder="Password"  />
-        		 <input type="submit" name="submit" value="Log In"  />
+				<input type="submit" name="submit" routerLinkActive="active" routerLink="/UserHome" value="Log In"  />
                  </form>
-                <a href="\forgotPassword.html" class="button">Forgot Password?</a>
+				 <a class="nav-link" routerLinkActive="active" routerLink="/forgotPassword">Forgot Password</a>
+				 <a></a>
 				<br>
-				<a href="\newUser.html" class="button">New User</a>
+				<a class="nav-link" routerLinkActive="active" routerLink="/signup">New User</a>
+				<a></a>
                  
     	</div>
   	  </div>
