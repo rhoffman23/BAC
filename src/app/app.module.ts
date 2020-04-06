@@ -14,6 +14,12 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { EmailResetComponent } from './email-reset/email-reset.component';
 import { EmployeeHomeComponent } from './employee-home/employee-home.component';
 import { UserHomeComponent } from './user-home/user-home.component';
+import { BillingComponent } from './billing/billing.component';
+import { ScheduleEventComponent } from './schedule-event/schedule-event.component';
+import { FoodComponent } from './food/food.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { EmployeeScheduleComponent } from './employee-schedule/employee-schedule.component';
+import { EventScheduleComponent } from './event-schedule/event-schedule.component';
 
 
 
@@ -30,7 +36,13 @@ import { UserHomeComponent } from './user-home/user-home.component';
     ForgotPasswordComponent,
     EmailResetComponent,
     EmployeeHomeComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    BillingComponent,
+    ScheduleEventComponent,
+    FoodComponent,
+    EquipmentComponent,
+    EmployeeScheduleComponent,
+    EventScheduleComponent
   ],
   imports: [
     BrowserModule,
