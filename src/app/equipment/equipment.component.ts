@@ -7,20 +7,33 @@ import { Component } from '@angular/core';
 })
 export class EquipmentComponent {
     editField: string;
+    count: number = 0;
     personList: Array<any> = [
-      { id: 1, name: 'Aurelia Vega', age: 30, companyName: 'Deepends', country: 'Spain', city: 'Madrid' },
-      { id: 2, name: 'Guerra Cortez', age: 45, companyName: 'Insectus', country: 'USA', city: 'San Francisco' },
-      { id: 3, name: 'Guadalupe House', age: 26, companyName: 'Isotronic', country: 'Germany', city: 'Frankfurt am Main' },
-      { id: 4, name: 'Aurelia Vega', age: 30, companyName: 'Deepends', country: 'Spain', city: 'Madrid' },
-      { id: 5, name: 'Elisa Gallagher', age: 31, companyName: 'Portica', country: 'United Kingdom', city: 'London' },
+      { id: 1, item: 'Large table', location: 'Storage' , purchase: '03/14/20', exp: '06/02/20', quanity: '4' },
+      { id: 2, item: 'Small table', location: 'Storage' , purchase: '0', exp: '0', quanity: '2' },
+      { id: 3, item: 'Disco Ball', location: 'Storage' , purchase: '2', exp: '1', quanity: '2' },
+      { id: 4, item: 'Large table', location: 'Storage' , purchase: '0', exp: '0', quanity: '4' },
     ];
 
     awaitingPersonList: Array<any> = [
-      { id: 6, name: 'George Vega', age: 28, companyName: 'Classical', country: 'Russia', city: 'Moscow' },
-      { id: 7, name: 'Mike Low', age: 22, companyName: 'Lou', country: 'USA', city: 'Los Angeles' },
-      { id: 8, name: 'John Derp', age: 36, companyName: 'Derping', country: 'USA', city: 'Chicago' },
-      { id: 9, name: 'Anastasia John', age: 21, companyName: 'Ajo', country: 'Brazil', city: 'Rio' },
-      { id: 10, name: 'John Maklowicz', age: 36, companyName: 'Mako', country: 'Poland', city: 'Bialystok' },
+      { id: 5, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 6, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 7, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 8, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 9, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 10, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 11, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 12, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 13, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 14, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 15, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 16, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 17, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 18, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 19, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 20, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 21, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
+      { id: 22, item: 'default', location: 'default' , shelf: 'default', bin: 'default', quanity: 'default' },
     ];
 
     updateList(id: number, property: string, event: any) {
@@ -38,6 +51,7 @@ export class EquipmentComponent {
         const person = this.awaitingPersonList[0];
         this.personList.push(person);
         this.awaitingPersonList.splice(0, 1);
+
       }
     }
 

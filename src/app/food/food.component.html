@@ -1,27 +1,43 @@
-<br>
-<table class="table table-bordered table-responsive-md table-striped text-center">
-    <tr>
-      <th class="text-center">Food Item</th>
-      <th class="text-center">Date Recieved</th>
-      <th class="text-center">Date Expires</th>
-      <th class="text-center">Quanity</th>
-      <th class="text-center">Location</th>
+<div class="card text-center">
+  <h3 class="text-center ">Food Mangement</h3>
+  <div class="text-center">
+    <div id="table" class="text-center">
+      
+      <table class=" text-center">
+        <tr class = text-center>
+          <th class="text-center">Item</th>
+          <th class="text-center">Location</th>
+          <th class="text-center">Date Purchased</th>
+          <th class="text-center">Expiration Date</th>
+          <th class="text-center">Quanity</th>
+          <th class="text-center">Remove</th>
+          <th class="text-center">Sort</th>
+        </tr>
+        <tr *ngFor="let person of personList; let id = index" class = 'text-center'>
+          <td>
+            <span (keyup)="changeValue(id, 'item', $event)" (blur)="updateList(id, 'item', $event)" contenteditable="true">{{person.item}}</span>
+          </td>
+          <td> 
+            <span contenteditable="true" (keyup)="changeValue(id, 'location', $event)" (blur)="updateList(id, 'location', $event)">{{person.location}}</span>
+          </td>
+          <td>
+            <span contenteditable="true" (keyup)="changeValue(id, 'purchase', $event)" (blur)="updateList(id, 'purchase', $event)">{{person.purchase}}</span>
+          </td>
+          <td>
+            <span contenteditable="true" (keyup)="changeValue(id, 'exp', $event)" (blur)="updateList(id, 'exp', $event)">{{person.exp}}</span>
+          </td>
+          <td>
+            <span contenteditable="true" (keyup)="changeValue(id, 'quanity', $event)" (blur)="updateList(id, 'quanity', $event)">{{person.quanity}}</span>
+          </td>
 
-    </tr>
-
-    <tr>
-        <td>Corn</td>
-        <td>3/26/20</td>
-        <td>4/30/20</td>
-        <td>0</td>
-        <td>Pantry</td>
-       </tr>
-</table>
-
-<br>
-<div class = "text-center">
-    <input type="button" name="edit" value="Edit"  />
-    <input type="button" name="Sort" value="Sort"  />
-    <input type="button" name="remove" value="Remove"  />
-    <input type="button" name="add" value="Add"  />
+          <td>
+            <span class="table-remove">
+              <button type="button" mdbBtn color="danger" rounded="true" size="sm" class="my-0" (click)="remove(id)">Remove</button>
+            </span>
+          </td>
+        </tr>
+        <button type="button" mdbBtn color="danger" rounded="true" size="sm" class="my-0" (click)="add()">Add</button>
+      </table>
+    </div>
+  </div>
 </div>
