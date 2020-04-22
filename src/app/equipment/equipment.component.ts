@@ -9,10 +9,10 @@ export class EquipmentComponent {
     editField: string;
     count: number = 0;
     personList: Array<any> = [
-      { id: 1, item: 'Large table', location: 'Storage' , purchase: '03/14/20', exp: '06/02/20', quanity: '4' },
-      { id: 2, item: 'Small table', location: 'Storage' , purchase: '0', exp: '0', quanity: '2' },
-      { id: 3, item: 'Disco Ball', location: 'Storage' , purchase: '2', exp: '1', quanity: '2' },
-      { id: 4, item: 'Large table', location: 'Storage' , purchase: '0', exp: '0', quanity: '4' },
+      { id: 1, item: 'Large table', location: 'Storage' , shelf: '0', bin: '0', quanity: '4' },
+      { id: 2, item: 'Small table', location: 'Storage' , shelf: '0', bin: '0', quanity: '2' },
+      { id: 3, item: 'Disco Ball', location: 'Storage' , shelf: '2', bin: '1', quanity: '2' },
+      { id: 4, item: 'Speaker', location: 'Ballroom' , shelf: '0', bin: '0', quanity: '4' },
     ];
 
     awaitingPersonList: Array<any> = [
