@@ -1,0 +1,37 @@
+.center {
+    text-align: center;
+  }
+
+  
+.text-center {
+  text-align: center;
+}
+
+html{background-color: #009390}
+
+.card{
+    width:50%;
+    height: auto;
+    padding: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #000;
+    margin: auto;
+    text-align: center;
+
+    }
+button{
+    background-color: #009390;
+    color: white;
+    width: auto;
+    
+    }
+th{
+      padding: auto auto;
+      text-align: center;
+      margin: auto;
+    }
+
+  .table{
+    text-align: center;
+  }

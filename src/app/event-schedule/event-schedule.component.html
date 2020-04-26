@@ -1,0 +1,54 @@
+<br>  <br>
+<div class = 'center'>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=OW9hMzRraXVxbG5sbHY1c2o2Nmg3Y2s4ajRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D81B60&amp;color=%230B8043&amp;showTitle=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="card text-center">
+    <h3 class="text-center ">Event Mangement</h3>
+    <div class="text-center">
+      <div id="table" class="text-center">
+        
+        <table class=" text-center">
+          <tr class = text-center>
+            <th class="text-center">Event Name</th>
+            <th class="text-center">Group Name</th>
+            <th class="text-center">Date Submitted</th>
+            <th class="text-center">Event Date</th>
+            <th class="text-center">Number of People</th>
+            <th class="text-center">Room Requested</th>
+
+          </tr>
+          <tr *ngFor="let person of personList; let id = index" class = 'text-center'>
+            <td>
+              <span (keyup)="changeValue(id, 'name', $event)" (blur)="updateList(id, 'name', $event)" contenteditable="true">{{person.name}}</span>
+            </td>
+            <td> 
+                <span contenteditable="true" (keyup)="changeValue(id, 'company', $event)" (blur)="updateList(id, 'company', $event)">{{person.company}}</span>
+              </td>
+            <td> 
+              <span contenteditable="true" (keyup)="changeValue(id, 'sub', $event)" (blur)="updateList(id, 'sub', $event)">{{person.sub}}</span>
+            </td>
+            <td>
+              <span contenteditable="true" (keyup)="changeValue(id, 'date', $event)" (blur)="updateList(id, 'date', $event)">{{person.date}}</span>
+            </td>
+            <td>
+              <span contenteditable="true" (keyup)="changeValue(id, 'num', $event)" (blur)="updateList(id, 'num', $event)">{{person.num}}</span>
+            </td>
+            <td>
+              <span contenteditable="true" (keyup)="changeValue(id, 'room', $event)" (blur)="updateList(id, 'room', $event)">{{person.room}}</span>
+            </td>
+  
+            <td>
+              <span class="table-remove">
+                <button type="button" mdbBtn color="danger" rounded="true" size="sm" class="my-0" (click)="remove(id)">Accept</button>
+                <button type="button" mdbBtn color="danger" rounded="true" size="sm" class="my-0" (click)="remove(id)">Decline</button>
+              </span>
+            </td>
+          </tr>
+          
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>

@@ -1,0 +1,43 @@
+<div class="card text-center">
+  <h3 class="text-center ">Equipment</h3>
+  <div class="text-center">
+    <div id="table" class="text-center">
+      
+      <table class=" text-center">
+        <tr class = text-center>
+          <th class="text-center">Item</th>
+          <th class="text-center">Location</th>
+          <th class="text-center">Shelf</th>
+          <th class="text-center">Bin</th>
+          <th class="text-center">Quanity</th>
+          <th class="text-center">Remove</th>
+
+        </tr>
+        <tr *ngFor="let person of personList; let id = index" class = 'text-center'>
+          <td>
+            <span (keyup)="changeValue(id, 'item', $event)" (blur)="updateList(id, 'item', $event)" contenteditable="true">{{person.item}}</span>
+          </td>
+          <td> 
+            <span contenteditable="true" (keyup)="changeValue(id, 'location', $event)" (blur)="updateList(id, 'location', $event)">{{person.location}}</span>
+          </td>
+          <td>
+            <span contenteditable="true" (keyup)="changeValue(id, 'shelf', $event)" (blur)="updateList(id, 'shelf', $event)">{{person.shelf}}</span>
+          </td>
+          <td>
+            <span contenteditable="true" (keyup)="changeValue(id, 'bin', $event)" (blur)="updateList(id, 'bin', $event)">{{person.bin}}</span>
+          </td>
+          <td>
+            <span contenteditable="true" (keyup)="changeValue(id, 'quanity', $event)" (blur)="updateList(id, 'quanity', $event)">{{person.quanity}}</span>
+          </td>
+
+          <td>
+            <span class="table-remove">
+              <button type="button" mdbBtn color="danger" rounded="true" size="sm" class="my-0" (click)="remove(id)">Remove</button>
+            </span>
+          </td>
+        </tr>
+        <button type="button" mdbBtn color="danger" rounded="true" size="sm" class="my-0" (click)="add()">Add</button>
+      </table>
+    </div>
+  </div>
+</div>

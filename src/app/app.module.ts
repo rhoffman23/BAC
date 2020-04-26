@@ -9,6 +9,17 @@ import { EmployeeComponent } from './employee/employee.component';
 import { CalenderComponent } from './calender/calender.component';
 import { TermsComponent } from './terms/terms.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
+import { SignUPComponent } from './sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { EmailResetComponent } from './email-reset/email-reset.component';
+import { EmployeeHomeComponent } from './employee-home/employee-home.component';
+import { UserHomeComponent } from './user-home/user-home.component';
+import { BillingComponent } from './billing/billing.component';
+import { ScheduleEventComponent } from './schedule-event/schedule-event.component';
+import { FoodComponent } from './food/food.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { EmployeeScheduleComponent } from './employee-schedule/employee-schedule.component';
+import { EventScheduleComponent } from './event-schedule/event-schedule.component';
 
 
 
@@ -20,7 +31,18 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
     EmployeeComponent,
     CalenderComponent,
     TermsComponent,
-    NoPageFoundComponent
+    NoPageFoundComponent,
+    SignUPComponent,
+    ForgotPasswordComponent,
+    EmailResetComponent,
+    EmployeeHomeComponent,
+    UserHomeComponent,
+    BillingComponent,
+    ScheduleEventComponent,
+    FoodComponent,
+    EquipmentComponent,
+    EmployeeScheduleComponent,
+    EventScheduleComponent
   ],
   imports: [
     BrowserModule,
